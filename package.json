@@ -5,16 +5,22 @@
   "main": "App.js",
   "scripts": {
     "test": "jest",
-    "start":"parcel index.html",
-    "build":"parcel build index.html"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "author": "Sam",
   "license": "ISC",
   "devDependencies": {
     "parcel": "^2.11.0",
-    "process": "^0.11.10"
+    "postcss": "^8.4.33",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.4.1"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.1",
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.1"
