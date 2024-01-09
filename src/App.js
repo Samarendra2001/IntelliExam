@@ -10,6 +10,8 @@ import Error from "./components/Error";
 import ExamAnalytics from "./components/ExamAnalytics";
 import OnlineExam from "./components/OnlineExam";
 import Footer from "./components/Footer";
+import SignUp from "./components/SignUp";
+import SignIn from "./components/SignIn";
 
 const AppLayout=()=>{
     return(
@@ -35,7 +37,7 @@ const appRouter = createBrowserRouter([
                 element:<Contact/>,
             },
             {
-                path:"home",
+                path:"/",
                 element:<Home/>,
             },
             {
@@ -53,6 +55,14 @@ const appRouter = createBrowserRouter([
             {
                 path:"Footer",
                 element:<Footer />,
+            },
+            {
+                path:"signup",
+                element:<SignUp />,
+            },
+            {
+                path:"signin",
+                element:<SignIn />,
             },
         ]
     }
