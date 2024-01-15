@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom";
+
+const onFinish = (values)=>{
+    console.log(values);
+}
 const SignIn = ()=>{
     return (
         <div className="bg-slate-300 p-1 m-28 shadow-lg max-w-lg mx-auto rounded-lg">
-            <form className="flex flex-col gap-4 items-center">
+            <form className="flex flex-col gap-4 items-center" onFinish={onFinish}>
                 <h1 className="text-3xl font-semibold text-center my-7">SignIn</h1>
                 <input type="text" id="name" placeholder="name" className="border p-3 w-[80%] rounded-lg" required/>
                 <input type="email" id="email" placeholder="email" className="border p-3 w-[80%] rounded-lg" required/>
