@@ -24,5 +24,11 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.1"
+  },
+  "proxy":{
+    "/api":{
+      "target":"http://localhost:5000",
+      "changeOrigin":true
+    }
   }
 }
