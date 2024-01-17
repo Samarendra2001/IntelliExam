@@ -25,3 +25,15 @@ app.listen(5000,()=>{
 
 app.use('/api/user',userRouter);
 app.use('/api/auth',authRouter);
+
+//CREATING MIDDLEWARE
+
+app.use((err,req,res,next)=>{
+    const statusCode = err.statusCode || 500;
+    const message = err.message || "Interna lServer Error";
+    return res.status(statusCode).json({
+        success:false,
+        statusCode,
+        message,
+    })
+})
